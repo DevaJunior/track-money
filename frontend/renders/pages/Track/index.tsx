@@ -10,7 +10,7 @@ import '../../../global/styles.css';
 import FragHome from './../../fragments/FragHome';
 import Sidebar from './../../menus/Sidebar';
 import Mdl_AddMovimentacao from './../../modal/Mdl_AddMovimentacao';
-//import FragFluxo from '../../fragments/FragFluxo';
+import FragFluxo from '../../fragments/FragFluxo';
 
 // Tipos
 import type { NewTransactionData, Page, Transaction } from '../../../global/types';
@@ -79,7 +79,7 @@ const Track: React.FC = () => {
             case 'home':
                 return <FragHome total={total} expense={expense} transactions={transactions} openModal={() => openTransactionModal()} />;
 
-            /*case 'fluxo':
+            case 'fluxo':
                 return <FragFluxo
                     transactions={transactions}
                     onAddTransaction={handleAddTransaction}
@@ -87,7 +87,7 @@ const Track: React.FC = () => {
                     onDeleteTransaction={handleDeleteTransaction}
                 />;
 
-            case 'relatorio':
+            /*case 'relatorio':
                 return <FragRelatorio transactions={transactions} />;
 
             case 'config':

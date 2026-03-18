@@ -1,0 +1,91 @@
+.fluxo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.fluxo-header h1 {
+    font-size: 1.875rem;
+    font-weight: 700;
+}
+
+.fluxo-header p {
+    color: var(--color-text-muted);
+}
+
+.btn-primary {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #3730a3;
+}
+
+.fluxo-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.fluxo-table th,
+.fluxo-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.fluxo-table th {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.fluxo-table .amount.income { color: var(--color-green); }
+.fluxo-table .amount.expense { color: var(--color-red); }
+.fluxo-table .category-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    background-color: #f1f5f9;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.actions-cell {
+    text-align: center;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.action-btn {
+    background: none;
+    border: none;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.action-btn:hover {
+    background-color: #f1f5f9;
+    color: var(--color-primary);
+}
+
+.empty-state {
+    text-align: center;
+    padding: 2rem;
+    color: var(--color-text-muted);
+}
