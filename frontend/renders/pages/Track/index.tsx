@@ -9,7 +9,7 @@ import '../../../global/styles.css';
 //import FragRelatorio from './../../fragments/FragRelatorio';
 import FragHome from './../../fragments/FragHome';
 import Sidebar from './../../menus/Sidebar';
-//import Mdl_AddMovimentacao from './../../modal/Mdl_AddMovimentacao';
+import Mdl_AddMovimentacao from './../../modal/Mdl_AddMovimentacao';
 //import FragFluxo from '../../fragments/FragFluxo';
 
 // Tipos
@@ -111,7 +111,7 @@ const Track: React.FC = () => {
             </main>
 
             {/* O Modal principal, usado por páginas como a Home */}
-            {/* {isModalOpen && currentPage !== 'fluxo' && (
+            {isModalOpen && currentPage !== 'fluxo' && (
                 <Mdl_AddMovimentacao
                     isOpen={isModalOpen}
                     onClose={() => {
@@ -122,7 +122,7 @@ const Track: React.FC = () => {
                     onUpdateTransaction={handleUpdateTransaction}
                     transactionToEdit={editingTransaction}
                 />
-            )} */}
+            )}
         </div>
     );
 };
