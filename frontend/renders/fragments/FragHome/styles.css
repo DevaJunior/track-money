@@ -1,0 +1,122 @@
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.balance-display {
+    text-align: left;
+}
+
+.balance-display h3,
+.expense-display h3 {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    font-weight: 500;
+}
+
+.balance-display p {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.expense-display {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: right;
+}
+
+.expense-display p {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.expense-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #fee2e2;
+    color: var(--color-red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+@keyframes jump {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+.expense-icon:hover {
+    animation: jump 0.6s ease;
+}
+
+.center-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.center-header .logo-container {
+    margin-bottom: 1rem;
+}
+
+.center-header h1 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 0.25rem;
+}
+
+.center-header p {
+    color: var(--color-text-muted);
+}
+
+.suggestion-chips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.chip {
+    background-color: var(--color-card);
+    border: 1px solid var(--color-border);
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.chip:hover {
+    background-color: #f1f5f9;
+    border-color: #cbd5e1;
+}
+
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    .balance-display,
+    .expense-display {
+        text-align: center;
+        justify-content: center;
+    }
+}
