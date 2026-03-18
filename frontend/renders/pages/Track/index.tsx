@@ -5,8 +5,8 @@ import './styles.css';
 import '../../../global/styles.css';
 
 // Componentes e Fragmentos
-//import FragConfig from './../../fragments/FragConfig';
-//import FragRelatorio from './../../fragments/FragRelatorio';
+import FragConfig from './../../fragments/FragConfig';
+import FragRelatorio from './../../fragments/FragRelatorio';
 import FragHome from './../../fragments/FragHome';
 import Sidebar from './../../menus/Sidebar';
 import Mdl_AddMovimentacao from './../../modal/Mdl_AddMovimentacao';
@@ -87,11 +87,11 @@ const Track: React.FC = () => {
                     onDeleteTransaction={handleDeleteTransaction}
                 />;
 
-            /*case 'relatorio':
+            case 'relatorio':
                 return <FragRelatorio transactions={transactions} />;
 
             case 'config':
-                return <FragConfig />;*/
+                return <FragConfig />;
 
             default:
                 return <FragHome total={total} expense={expense} transactions={transactions} openModal={() => openTransactionModal()} />;

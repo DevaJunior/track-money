@@ -1,0 +1,15 @@
+.chart-container {
+  width: 100%;
+  padding-top: 1rem;
+}
+
+.chart-label {
+  font-size: 10px;
+  fill: var(--color-text-muted);
+  font-family: 'Inter', sans-serif;
+}
+
+.chart-grid-line {
+  stroke: var(--color-border);
+  stroke-dasharray: 2, 2;
+}
